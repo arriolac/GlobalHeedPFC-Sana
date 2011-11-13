@@ -1,0 +1,30 @@
+<Procedure title="General Complaint" author="Partners For Care">
+
+  <!--Procedure Start --> 
+  <!-- TODO: CHIEF COMPLAINT is under Class "question" in the concepts database. how do we use this? -->
+  <Page>
+    <Element type="ENTRY" id="chiefComplaint" 
+      concept="CHIEF COMPLAINT" 
+      question="Enter Patient's Chief Complaint:" answer=""/>
+  </Page>
+
+  <!-- TODO: Add to CONCEPTS database -->
+  <Page>
+    <Element type="ENTRY" id="duration" 
+      concept="COMPLAINT DURATION" 
+      numeric="DIALPAD"
+      question="Enter Duration in Days:" answer=""/>
+  </Page>
+
+  <Page>
+    <Element type="ENTRY" id="comments" 
+      concept="COMMENTS" 
+      question="Other comments:" answer=""/>
+  </Page>
+
+  <Page>
+    <Element type="PICTURE" id="picture" 
+      concept="COMPLAINT PICTURE" 
+      question="Add a Picture:" answer=""/>
+  </Page>
+</Procedure>
