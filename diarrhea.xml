@@ -14,7 +14,7 @@
     <Element type="ENTRY" id="duration" 
       concept="COMPLAINT DURATION" 
       numeric="DIALPAD"
-      question="Enter Duration in Days:" answer=""/>
+      question="Enter Complaint Duration in Days:" answer=""/>
   </Page>
 
   <Page>
