@@ -1,0 +1,54 @@
+<htmlform>
+    <macros>
+        lightgrey=#e0e0e0
+        lightblue=#95ADCA
+        darkblue=#4444ff
+    </macros>
+
+    <table border="0" width="100%">
+
+        <!-- Encounter Details -->
+        <td width="50%">
+            <table width="100%" border="1">
+                <tr> 
+                    <td bgcolor="$lightblue"><b>Encounter Information</b></td> 
+                </tr>
+                <tr>
+                    <td>
+                        Date: <encounterDate default="today"/><br />
+                        Physician: <encounterProvider role="Provider"/>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+
+        <!-- Patient Information -->
+        <div style="color: $darkblue">
+            <h2> Patient Information </h2>
+        </div>
+        Name of Patient: <patient field="name"/> 
+
+            </table>
+        </td>
+    
+        <td width="50%">
+            <table width="100%" border="1">
+                <tr>
+                    <!-- Tracking Information -->
+                    <div style="color: $darkblue">
+                        <h2> Tracking Information </h2>
+                    </div>
+
+                    <!-- Disposition -->
+                    <div style="color: $darkblue">
+                        <h2> Disposition </h2>
+                    </div>
+                </tr>
+            </table>
+        </td>
+
+    </table>
+
+    <submit/>
+
+</htmlform>
