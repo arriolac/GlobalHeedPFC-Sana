@@ -5,48 +5,81 @@
         darkblue=#4444ff
     </macros>
 
-    <table border="0" width="100%">
+    <table border="0" width="90%">
+            <!-- Encounter Details -->
+            <tr> 
+                <h2><font color="darkblue">Encounter Information</font></h2>
+            </tr>
+            <tr>
+                <td>
+                    Date: <encounterDate default="today"/>
+                    Physician: <encounterProvider role="Provider"/>
+                    Location: <encounterLocation/>
+                </td>
+            </tr>
 
-        <!-- Encounter Details -->
-        <td width="50%">
-            <table width="100%" border="1">
-                <tr> 
-                    <td bgcolor="$lightblue"><b>Encounter Information</b></td> 
-                </tr>
-                <tr>
-                    <td>
-                        Date: <encounterDate default="today"/><br />
-                        Physician: <encounterProvider role="Provider"/>
-                    </td>
-                </tr>
-                <tr>
-                </tr>
+            <!-- Disposition -->
+            <tr> 
+                <h2><font color="darkblue">Disposition</font></h2>
+            </tr>
+            <tr>
+                <table border="1" width="90%">
+                    <th>asdfasd</th>
+                    <th>something</th>
+                </table>
+            </tr>
 
-        <!-- Patient Information -->
-        <div style="color: $darkblue">
-            <h2> Patient Information </h2>
-        </div>
-        Name of Patient: <patient field="name"/> 
+            <!-- Tracking Information -->
+            <tr> 
+                <h2><font color="darkblue">Tracking Information</font></h2>
+            </tr>
 
-            </table>
-        </td>
-    
-        <td width="50%">
-            <table width="100%" border="1">
-                <tr>
-                    <!-- Tracking Information -->
-                    <div style="color: $darkblue">
-                        <h2> Tracking Information </h2>
-                    </div>
-
-                    <!-- Disposition -->
-                    <div style="color: $darkblue">
-                        <h2> Disposition </h2>
-                    </div>
-                </tr>
-            </table>
-        </td>
-
+            <tr>
+                <table border="1" width="90%">
+                    <tr>
+                        <th> Date </th>
+                        <th> Time Call Received </th>
+                        <th> Time Seen </th>
+                        <th> Staff Member </th>
+                        <th> Complaint </th>
+                    </tr>
+                    <tr>
+                        <td><center> <obs conceptId="6136" /> </center></td>
+                        <td><center> <obs conceptId="6137" /> </center></td>
+                        <td><center> <obs conceptId="6138" /> </center></td>
+                        <td><center> <obs conceptId="6139" /> </center></td>
+                        <td><center> <obs conceptId="6133" /> </center></td>
+                    </tr>
+                    <tr>
+                        <td><center> <obs conceptId="6136" /> </center></td>
+                        <td><center> <obs conceptId="6137" /> </center></td>
+                        <td><center> <obs conceptId="6138" /> </center></td>
+                        <td><center> <obs conceptId="6139" /> </center></td>
+                        <td><center> <obs conceptId="6133" /> </center></td>
+                    </tr>
+                    <tr>
+                        <td><center> <obs conceptId="6136" /> </center></td>
+                        <td><center> <obs conceptId="6137" /> </center></td>
+                        <td><center> <obs conceptId="6138" /> </center></td>
+                        <td><center> <obs conceptId="6139" /> </center></td>
+                        <td><center> <obs conceptId="6133" /> </center></td>
+                    </tr>
+                    <tr>
+                        <td><center> <obs conceptId="6136" /> </center></td>
+                        <td><center> <obs conceptId="6137" /> </center></td>
+                        <td><center> <obs conceptId="6138" /> </center></td>
+                        <td><center> <obs conceptId="6139" /> </center></td>
+                        <td><center> <obs conceptId="6133" /> </center></td>
+                    </tr>
+                    <tr>
+                        <td><center> <obs conceptId="6136" /> </center></td>
+                        <td><center> <obs conceptId="6137" /> </center></td>
+                        <td><center> <obs conceptId="6138" /> </center></td>
+                        <td><center> <obs conceptId="6139" /> </center></td>
+                        <td><center> <obs conceptId="6133" /> </center></td>
+                    </tr>
+                </table>
+            </tr>
     </table>
 
     <submit/>
