@@ -1,244 +1,174 @@
 <htmlform>
-    <macros>
-        lightgrey=#e0e0e0
-        lightblue=#95ADCA
-        darkblue=#4444ff
-    </macros>
+<macros>
+lightgrey=#e0e0e0
+lightblue=#95ADCA
+darkblue=#4444ff
+</macros>
 
-    <table border="0" width="100%">
-            <!-- Encounter Details -->
-            <tr> 
-                <td>
-                    <h2><font color="darkblue">Encounter Information</font></h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Date: <encounterDate default="today"/>
-                    Physician: <encounterProvider role="Provider"/>
-                    Location: <encounterLocation/>
-                </td>
-            </tr>
+<table border="0" width="100%">
+    <!-- Encounter Details -->
+    <tr> 
+        <td>
+            <h2><font color="darkblue">Encounter Information</font></h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Date: <encounterDate default="today"/>
+            Physician: <encounterProvider role="Provider"/>
+            Location: <encounterLocation/>
+        </td>
+    </tr>
 
-            <!-- Disposition -->
-            <tr> 
-                <td>
-                    <h2><font color="darkblue">Disposition</font></h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table border="1" width="100%"> 
-                        <tr>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr> <th>Dr. Vincent's Recommendation</th> </tr>
-                                    <tr>
-                                        <td>
-                                            <table border="0" width="100%">
-                                                <tr>
-                                                    <td><center> Referral: </center></td>
-                                                    <td> <obs conceptId="6140" style="yes_no" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><center> Medication: </center></td>
-                                                    <td> <obs conceptId="6141" style="yes_no" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><center> No Treatment: </center></td>
-                                                    <td> <obs conceptId="6142" style="yes_no" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><center> Clinic Visit: </center></td>
-                                                    <td> <obs conceptId="6143" style="yes_no" /> </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr> <th> Patient's Response</th> </tr>
-                                    <tr>
-                                        <td>
-                                            <table border="0" width="100%">
-                                                <tr>
-                                                    <td> To Hospital: <obs conceptId="6144" style="yes_no" /> </td>
-                                                    <td> Why? <obs conceptId="6145" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Obtained: <obs conceptId="6146" style="yes_no" /> </td>
-                                                    <td> Why? <obs conceptId="6147" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Why? <obs conceptId="6148" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Date: <obs conceptId="6149" /> </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr> <th>Outcome</th> </tr>
-                                    <tr>
-                                        <td>
-                                            <table border="0" width="100%">
-                                                <tr>
-                                                    <td> <obs conceptId="6150" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6150" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6150" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6150" /> </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr> <th>Final Disposition</th> </tr>
-                                    <tr>
-                                        <td>
-                                            <table border="0" width="100%">
-                                                <tr>
-                                                    <td> <obs conceptId="6151" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6151" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6151" /> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <obs conceptId="6151" /> </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
+    <!-- Disposition -->
+    <tr> 
+        <td>
+            <h2><font color="darkblue">Disposition</font></h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border="1" width="100%"> 
+                <tr>
+                    <td>
+                        <table border="0" width="100%">
+                            <tr> <th>Dr. Vincent's Recommendation</th> </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" width="100%">
+                                        <tr>
+                                            <td><center> Referral: </center></td>
+                                            <td> <obs conceptId="6140" style="yes_no" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><center> Medication: </center></td>
+                                            <td> <obs conceptId="6141" style="yes_no" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><center> No Treatment: </center></td>
+                                            <td> <obs conceptId="6142" style="yes_no" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><center> Clinic Visit: </center></td>
+                                            <td> <obs conceptId="6143" style="yes_no" /> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table border="0" width="100%">
+                            <tr> <th> Patient's Response</th> </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" width="100%">
+                                        <tr>
+                                            <td> To Hospital: <obs conceptId="6144" style="yes_no" /> </td>
+                                            <td> Why not? <obs conceptId="6145" answers="Couldn't afford, Didn't believe needed to go, No transportation, Other"/> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Obtained: <obs conceptId="6146" style="yes_no" /> </td>
+                                            <td> Why not? <obs conceptId="6147" answers="Couldn't afford, Didn't believe medication, Obtained medication elsewhere, Other"/> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Why not? <obs conceptId="6148" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Date: <obs conceptId="6149" /> </td>
+                                            <td> Why not? <obs conceptId="6152" answers="Too sick to come to clinic, Didn't believe needed to come, Couldn't afford to come, Other"/> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
 
+                    <td>
+                        <table border="0" width="100%">
+                            <tr> <th>Final Disposition</th> </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" width="100%">
+                                        <tr>
+                                            <td> <obs conceptId="6151" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <obs conceptId="6151" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <obs conceptId="6151" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <obs conceptId="6151" /> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> 
+            </table>
+        </td>
+    </tr>
 
-<!--
-                        </tr>
-                        <tr>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr>
-                                        <td> Referral: </td>
-                                        <td> <center> <obs conceptId="6140" style="yes_no" /> </center> </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr>
-                                        <td> Medication: </td>
-                                        <td> <center> <obs conceptId="6141" style="yes_no" /> </center> </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr>
-                                        <td> No Treatment: </td>
-                                        <td> <center> <obs conceptId="6142" style="yes_no" /> </center> </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table border="0" width="100%">
-                                    <tr>
-                                        <td> Clinic Visit: </td>
-                                        <td> <center> <obs conceptId="6143" style="yes_no" /> </center> </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        -->
+    <!-- Tracking Information -->
+    <tr> 
+        <td>
+            <h2><font color="darkblue">Tracking Information</font></h2>
+        </td>
+    </tr>
 
+    <tr>
+        <td>
+            <table border="1" width="90%">
+                <tr>
+                    <th> Date </th>
+                    <th> Time Call Received </th>
+                    <th> Time Seen </th>
+                    <th> Staff Member </th>
+                    <th> Complaint </th>
+                </tr>
+                <tr>
+                    <td><center> <obs conceptId="6136" /> </center></td>
+                    <td><center> <obs conceptId="6137" /> </center></td>
+                    <td><center> <obs conceptId="6138" /> </center></td>
+                    <td><center> <obs conceptId="6139" /> </center></td>
+                    <td><center> <obs conceptId="6133" /> </center></td>
+                </tr>
+                <tr>
+                    <td><center> <obs conceptId="6136" /> </center></td>
+                    <td><center> <obs conceptId="6137" /> </center></td>
+                    <td><center> <obs conceptId="6138" /> </center></td>
+                    <td><center> <obs conceptId="6139" /> </center></td>
+                    <td><center> <obs conceptId="6133" /> </center></td>
+                </tr>
+                <tr>
+                    <td><center> <obs conceptId="6136" /> </center></td>
+                    <td><center> <obs conceptId="6137" /> </center></td>
+                    <td><center> <obs conceptId="6138" /> </center></td>
+                    <td><center> <obs conceptId="6139" /> </center></td>
+                    <td><center> <obs conceptId="6133" /> </center></td>
+                </tr>
+                <tr>
+                    <td><center> <obs conceptId="6136" /> </center></td>
+                    <td><center> <obs conceptId="6137" /> </center></td>
+                    <td><center> <obs conceptId="6138" /> </center></td>
+                    <td><center> <obs conceptId="6139" /> </center></td>
+                    <td><center> <obs conceptId="6133" /> </center></td>
+                </tr>
+                <tr>
+                    <td><center> <obs conceptId="6136" /> </center></td>
+                    <td><center> <obs conceptId="6137" /> </center></td>
+                    <td><center> <obs conceptId="6138" /> </center></td>
+                    <td><center> <obs conceptId="6139" /> </center></td>
+                    <td><center> <obs conceptId="6133" /> </center></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
-
-
-                    </tr> 
-                </table>
-                </td>
-            </tr>
-
-            <!-- Tracking Information -->
-            <tr> 
-                <td>
-                    <h2><font color="darkblue">Tracking Information</font></h2>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <table border="1" width="90%">
-                        <tr>
-                            <th> Date </th>
-                            <th> Time Call Received </th>
-                            <th> Time Seen </th>
-                            <th> Staff Member </th>
-                            <th> Complaint </th>
-                        </tr>
-                        <tr>
-                            <td><center> <obs conceptId="6136" /> </center></td>
-                            <td><center> <obs conceptId="6137" /> </center></td>
-                            <td><center> <obs conceptId="6138" /> </center></td>
-                            <td><center> <obs conceptId="6139" /> </center></td>
-                            <td><center> <obs conceptId="6133" /> </center></td>
-                        </tr>
-                        <tr>
-                            <td><center> <obs conceptId="6136" /> </center></td>
-                            <td><center> <obs conceptId="6137" /> </center></td>
-                            <td><center> <obs conceptId="6138" /> </center></td>
-                            <td><center> <obs conceptId="6139" /> </center></td>
-                            <td><center> <obs conceptId="6133" /> </center></td>
-                        </tr>
-                        <tr>
-                            <td><center> <obs conceptId="6136" /> </center></td>
-                            <td><center> <obs conceptId="6137" /> </center></td>
-                            <td><center> <obs conceptId="6138" /> </center></td>
-                            <td><center> <obs conceptId="6139" /> </center></td>
-                            <td><center> <obs conceptId="6133" /> </center></td>
-                        </tr>
-                        <tr>
-                            <td><center> <obs conceptId="6136" /> </center></td>
-                            <td><center> <obs conceptId="6137" /> </center></td>
-                            <td><center> <obs conceptId="6138" /> </center></td>
-                            <td><center> <obs conceptId="6139" /> </center></td>
-                            <td><center> <obs conceptId="6133" /> </center></td>
-                        </tr>
-                        <tr>
-                            <td><center> <obs conceptId="6136" /> </center></td>
-                            <td><center> <obs conceptId="6137" /> </center></td>
-                            <td><center> <obs conceptId="6138" /> </center></td>
-                            <td><center> <obs conceptId="6139" /> </center></td>
-                            <td><center> <obs conceptId="6133" /> </center></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-    </table>
-
-    <submit/>
+<submit/>
 
 </htmlform>
