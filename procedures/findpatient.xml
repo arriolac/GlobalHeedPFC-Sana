@@ -45,11 +45,28 @@
 	</Page>
 	
   <!--  Added For PFC Procedures -->
+
+  <Page>
+      <Element type="ENTRY" id="phoneNumber" 
+	      concept="PHONE NUMBER" 
+	      question="Enter the Patient's Phone Number:" 
+	      answer=""/>
+  </Page>
+
 	<Page>
 	    <Element type="ENTRY" id="address" 
 	      concept="ADDRESS" 
 	      question="Enter Patient's Address:" 
 	      answer=""/>
+  </Page>
+
+  <Page>
+    <Element type="RADIO" id="clinicVisit"
+          concept="CLINIC VISIT"
+          question="Is this a clinic visit?"
+          required="true"
+          answer=""
+          choices="True,False"/>
   </Page>
 
   <!-- Patient Measurements -->
