@@ -60,15 +60,6 @@
 	      answer=""/>
   </Page>
 
-  <Page>
-    <Element type="RADIO" id="clinicVisit"
-          concept="CLINIC VISIT"
-          question="Is this a clinic visit?"
-          required="true"
-          answer=""
-          choices="True,False"/>
-  </Page>
-
   <!-- Patient Measurements -->
   <Page>
     <Element type="ENTRY" id="weight" 
