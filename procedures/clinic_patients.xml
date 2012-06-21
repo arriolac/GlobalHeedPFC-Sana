@@ -31,7 +31,8 @@
   <!-- Verify that this works by looking at sana code -->
   <Page>
     <Element type="GPS" id="gps"
-        concept
+        concept="GPS"
+        question="Record Your Position" answer=""/>
   </Page>
 
 </Procedure>
