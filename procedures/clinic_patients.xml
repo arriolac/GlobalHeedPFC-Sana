@@ -28,7 +28,6 @@
       question="Enter Complaint Duration in Days:" answer=""/>
   </Page>
 
-  <!-- Verify that this works by looking at sana code -->
   <Page>
     <Element type="GPS" id="gps"
         concept="GPS"
