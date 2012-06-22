@@ -94,14 +94,10 @@
   </Page>
 
   <Page>
-    <Element type="ENTRY" id="bloodPressDias" 
-      concept="DIASTOLIC BLOOD PRESSURE" 
+    <Element type="ENTRY" id="bloodPressure" 
+      concept="BLOOD PRESSURE" 
       numeric="DIALPAD"
-      question="Enter Patient's Diastolic Blood Pressure:" answer=""/>
-    <Element type="ENTRY" id="bloodPressSys" 
-      concept="SYSTOLIC BLOOD PRESSURE" 
-      numeric="DIALPAD"
-      question="Systolic Blood Pressure:" answer=""/>
+      question="Enter the Patient's Blood Pressure:" answer=""/>
   </Page>
 
 	<Page>
