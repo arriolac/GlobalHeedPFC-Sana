@@ -1,0 +1,57 @@
+<Procedure title="Headache, Numbness, Seizures" author="Partners For Care">
+
+  <!--Procedure Start --> 
+  <Page>
+    <Element type="SELECT" id="1" 
+      concept="SYMPTOMS" 
+      question="What is the symptom?:" 
+	  answer=""
+	  choices="Dizziness,Fainting,Seizures,Weakness,Numbness, Tingling, Tremor, Headaches, Chills, Head Trauma, Chanzes in: Memory Personality or Mood,Other complaints"/>
+  </Page>
+  
+  <Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="Fainting"/>
+		</ShowIf>
+		<Element type="ENTRY" 
+		concept="UNCONSCIOUSNESS" id="2" 
+		question="How long was the patient unconscious?" 
+		answer=""/>
+  </Page>
+  
+  <Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="Fainting"/>
+		</ShowIf>
+		<Element type="ENTRY" 
+		concept="FREQUENCY" id="3" 
+		question="Frequency of fainting spells" 
+		answer=""/>
+  </Page>
+  
+  <Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="Other complaints"/>
+		</ShowIf>
+		<Element type="ENTRY" 
+		concept="OTHER COMPLAINTS" id="4" 
+		question="What kind of complaint?" 
+		answer=""/>
+  </Page>
+
+
+  <Page>
+    <Element type="ENTRY" id="5" 
+      concept="COMPLAINT DURATION" 
+      question="How long has this been happening?:" 
+	  answer=""/>
+  </Page>
+  
+  <!-- Verify that this works by looking at sana code -->
+  <Page>
+    <Element type="GPS" id="gps"
+        concept="GPS"
+        question="Record Your Position" answer=""/>
+  </Page>
+  
+</Procedure>
