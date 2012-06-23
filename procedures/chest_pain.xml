@@ -12,7 +12,7 @@
     <Page>
         <Element type="MULTI_SELECT" id="chestPainSigns" 
                 concept="CHEST PAIN SIGNS" 
-                question="Select if Present:" 
+                question="Select If Present:" 
                 answer=""
                 choices="Dizziness,Tightness,Palpitations,Heart Murmurs,Abdominal Pain,Sharp/Dull/Crushing Chest Pain,Swelling,Leg Cramping,Calf Pain While Walking,Other Complaints"/>
     </Page>
