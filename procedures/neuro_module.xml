@@ -1,10 +1,10 @@
-<Procedure title="Headache, Numbness, Seizures" author="Partners For Care">
+<Procedure title="Neuro Module" author="Partners For Care">
 
   <!--Procedure Start --> 
   <Page>
-    <Element type="SELECT" id="1" 
-      concept="SYMPTOMS" 
-      question="What is the symptom?:" 
+    <Element type="MULTI_SELECT" id="1" 
+      concept="NEURO SYMPTOM" 
+      question="What are the symptoms?" 
 	  answer=""
 	  choices="Dizziness,Fainting,Seizures,Weakness,Numbness, Tingling, Tremor, Headaches, Chills, Head Trauma, Chanzes in: Memory Personality or Mood,Other complaints"/>
   </Page>
@@ -24,8 +24,8 @@
 			<Criteria type="EQUALS" id="1" value="Fainting"/>
 		</ShowIf>
 		<Element type="ENTRY" 
-		concept="FREQUENCY" id="3" 
-		question="Frequency of fainting spells" 
+		concept="FAINTING FREQUENCY" id="3" 
+		question="Frequency of fainting spells:" 
 		answer=""/>
   </Page>
   
@@ -35,7 +35,7 @@
 		</ShowIf>
 		<Element type="ENTRY" 
 		concept="OTHER COMPLAINTS" id="4" 
-		question="What kind of complaint?" 
+		question="Are there any other complaints?"
 		answer=""/>
   </Page>
 
@@ -43,7 +43,7 @@
   <Page>
     <Element type="ENTRY" id="5" 
       concept="COMPLAINT DURATION" 
-      question="How long has this been happening?:" 
+      question="Enter Complaint Duration in Days:"
 	  answer=""/>
   </Page>
   
