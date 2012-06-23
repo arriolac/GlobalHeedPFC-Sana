@@ -5,22 +5,22 @@
     <Element type="MULTI_SELECT" id="difficultyBreathingSigns"
       concept="DIFFICULTY BREATHING SIGNS"
       question="Select If Present:" answer=""
-      choices="Known Asthmatic,Wheezing,Difficulty In Breathing,Cough > 2/52,Chest Pains,Running Nose,Cough < 2/52,Nasal Congestion,Sore Throat,Ear Discharge,Fever,Other Complaints Related to Respiratory System" />
+      choices="Known Asthmatic,Wheezing,Difficulty In Breathing,Cough Greater Than 2/52,Chest Pains,Running Nose,Cough Less Than 2/52,Nasal Congestion,Sore Throat,Ear Discharge,Fever,Other Complaints Related to Respiratory System" />
   </Page>
 
   <Page>
     <ShowIf>
-      <Criteria type="EQUALS" id="difficultyBreathingSigns" value="Cough > 2/52"/>
+      <Criteria type="EQUALS" id="difficultyBreathingSigns" value="Cough Greater Than 2/52"/>
     </ShowIf>
     <Element type="RADIO" id="cough252details" 
-        concept="COUGH > 2/52 DETAILS" 
+        concept="COUGH GREATER THAN 2/52 DETAILS" 
         question="Select one of the ff:" answers="" choices="Dry,Wet,Productive" />
   </Page>
 
   <Page>
     <ShowIf>
         <and>
-            <Criteria type="EQUALS" id="difficultyBreathingSigns" value="Cough > 2/52"/>
+            <Criteria type="EQUALS" id="difficultyBreathingSigns" value="Cough Greater Than 2/52"/>
             <Criteria type="EQUALS" id="cough252details" value="Productive"/>
         </and>
     </ShowIf>
@@ -35,7 +35,7 @@
       </ShowIf>
       <Element type="ENTRY" id="chestPainDescription"
               concept="CHEST PAIN DESCRIPTION" question="What does it feel like?" anwer=""/>
-      <Element type="SELECTION" id="chestPainQual"
+      <Element type="RADIO" id="chestPainQual"
               concept="CHEST PAIN QUAL" question="What does it feel like?" anwer=""
               choices="Sharp,Dull,Crushing"/>
       <Element type="ENTRY" id="chestPainLoc"
