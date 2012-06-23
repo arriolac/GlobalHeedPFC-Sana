@@ -2,16 +2,16 @@
 
   <Page>
     <Element type="SELECT" id="1"
-        concept="INJURY"
-        question="Cause of injury"
+        concept="TRAUMA OR INJURY"
+        question="Enter Patient's Injury Cause:"
         answer=""
-        choices="Road traffic accident, Fall from height, Sharp injury, Blunt injury, Other injury"/>
+        choices="Road traffic accident,Fall from height,Sharp injury,Blunt injury,Other injury"/>
   </Page>
   
   <Page>
     <Element type="RADIO" id="2" 
       concept="MUSCLE PAINS" 
-      question="Do you have muscle pains?"
+      question="Does the patient have muscle pains?"
 	     answer=""
         choices="Yes,No"/>
   </Page>
@@ -21,14 +21,14 @@
       <Criteria type="EQUALS" id="2" value="Yes"/>
     </ShowIf>
     <Element type="ENTRY" id="3"
-        concept="MUSCLE PAINS"
+        concept="MUSCLE PAIN LOCATION"
         question="Enter the location of the pain:" answer=""/>
   </Page>
   
   <Page>
     <Element type="RADIO" id="4" 
       concept="JOINT PAINS" 
-      question="Do you have joint pains?"
+      question="Does the patient have joint pain?"
 	     answer=""
         choices="Yes,No"/>
   </Page>
@@ -38,55 +38,27 @@
       <Criteria type="EQUALS" id="4" value="Yes"/>
     </ShowIf>
     <Element type="ENTRY" id="5"
-        concept="JOINT PAINS"
+        concept="JOINT PAIN LOCATION"
         question="Enter the location of the pain:" answer=""/>
-  </Page>
-  
-  <Page>
-    <ShowIf>
-	<and>
-      <Criteria type="EQUALS" id="4" value="Yes"/>
-	  <Criteria type="EQUALS" id="5" value="Yes"/>
-	  </and>
-    </ShowIf>
     <Element type="RADIO" id="6"
         concept="SWOLLEN JOINT"
         question="Is the joint swollen?:"    
-		answer=""
+		    answer=""
         choices="Yes,No"/>
-  </Page>
-  
-  <Page>
-    <ShowIf>
-	<and>
-      <Criteria type="EQUALS" id="4" value="Yes"/>
-	  <Criteria type="EQUALS" id="5" value="Yes"/>
-	  <Criteria type="EQUALS" id="6" value="Yes"/>
-	  </and>
-    </ShowIf>
     <Element type="RADIO" id="7"
         concept="HOT JOINT"
-        question="Is the joint hot to touch?:"    
-		answer=""
-        choices="Yes,No"/>
-  </Page>
-  
-  <Page>
-    <ShowIf>
-     <and>
-      <Criteria type="EQUALS" id="4" value="Yes"/>
-	  <Criteria type="EQUALS" id="5" value="Yes"/>
-	  <Criteria type="EQUALS" id="6" value="Yes"/>
-	  <Criteria type="EQUALS" id="7" value="Yes"/>
-	  </and>
-    </ShowIf>
+        question="Is the joint hot to touch?"    
+		    answer=""
+        choices="Yes,No"/>    
     <Element type="RADIO" id="8"
         concept="RED JOINT"
-        question="Is the joint red?:"    
-		answer=""
+        question="Is the joint red?"    
+		    answer=""
         choices="Yes,No"/>
   </Page>
   
+  <!-- Continue here -->
+
   <Page>
     <Element type="RADIO" id="9" 
       concept="BACK PAIN" 
