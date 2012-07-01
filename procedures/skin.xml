@@ -3,8 +3,8 @@
   <!--Procedure Start --> 
   <Page>
     <Element type="SELECT" id="1" 
-      concept="SYMPTOMS" 
-      question="What is the symptom?:" 
+      concept="SKIN SYMPTOMS" 
+      question="What are the symptoms?" 
 	  answer=""
 	  choices="Rashes,Lumps,Itching,Dryness,Color changes,Hair and nail changes,Burns,Ease of bruising,Ease of bleeding,Wounds,Other complaints"/>
   </Page>
@@ -26,7 +26,7 @@
 		</ShowIf>
 		<Element type="ENTRY" 
 		concept="OTHER COMPLAINTS" id="4" 
-		question="What kind of complaint?" 
+		question="Are there any other complaints?"
 		answer=""/>  
   </Page>
 
@@ -34,7 +34,7 @@
   <Page>
     <Element type="ENTRY" id="5" 
       concept="COMPLAINT DURATION" 
-      question="How long has this been happening?:" 
+      question="Enter Complaint Duration in Days:"
 	  answer=""/>
   </Page>
   

@@ -445,6 +445,9 @@ public class MocaUtil {
         insertProcedure(ctx, R.raw.cough);
         insertProcedure(ctx, R.raw.neuro_module);
         
+        // Updated 6/30/2012
+        insertProcedure(ctx, R.raw.diabetes);
+        
     	//insertProcedure(ctx, R.raw.audio_upload_test);
     }
 
