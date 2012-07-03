@@ -12,12 +12,12 @@
         <ShowIf>
             <Criteria type="EQUALS" id="gastrointestinal" value="Diarrhea"/>
         </ShowIf>
-        <Element type="SELECT"
+        <Element type="SELECT" id="diarrheaColor"
             concept="DIARRHEA COLOR"
             question="Select which applies:"
             answer=""
             choices="Greenish,Yellowish,White,Mucoid,Red or Bloody,Others" />
-        <Element type="ENTRY"
+        <Element type="ENTRY" id="diarrheaTimes"
             concept="DIARRHEA TIMES"
             question="How many times?"
             answer="" />
@@ -27,7 +27,7 @@
         <ShowIf>
             <Criteria type="EQUALS" id="gastrointestinal" value="Abdominal Pains"/>
         </ShowIf>
-        <Element type="SELECT"
+        <Element type="SELECT" id="abdominalPains"
             concept="ABDOMINAL PAINS"
             question="Select which applies:"
             answer=""
@@ -38,16 +38,16 @@
         <ShowIf>
             <Criteria type="EQUALS" id="gastrointestinal" value="Vomiting"/>
         </ShowIf>
-        <Element type="ENTRY"
+        <Element type="ENTRY" id="vomitingDuration"
             concept="VOMITING DURATION"
             question="How long has the patient been vomiting?"
             answer="" />
-        <Element type="SELECT"
+        <Element type="SELECT" id="vomitingTime"
             concept="VOMITING TIME"
             question="When does it occur?"
             answer=""
             choices="After cough,After meal" />
-        <Element type="ENTRY"
+        <Element type="ENTRY" id="comments"
             concept="COMMENTS"
             question="Other comments:"
             answer="" />
