@@ -6,33 +6,36 @@
       question="Enter the Patient's Blood Glucose:" answer=""/>
   </Page>
 
+  <!-- Add to concepts database -->
   <Page>
     <Element type="RADIO" id="medication"
       concept="MEDICATION"
       question="Is the patient on medication?" answer=""
-      choice="Yes,No"/>
-  </Page>
+      choices="Yes,No" />
+  </Page >
 
+  <!-- Add to concepts database -->
   <Page>
     <ShowIf>
         <Criteria type="EQUALS" id="medication" value="Yes"/>
     </ShowIf>
     <Element type="ENTRY" id="medicationList" 
         concept="MEDICATION LIST"
-        question="Enter medications:" answers="" />
+        question="Enter medications:" answer="" />
     <Element type="ENTRY" id="yearOfDiagnosis" 
         concept="YEAR OF DIAGNOSIS"
         numeric="DIALPAD"
-        question="Enter year of diagnosis:" answers="" />
+        question="Enter year of diagnosis:" answer="" />
     <Element type="RADIO" id="onFollowUp" 
         concept="ON FOLLOWUP"
-        question="Is the patient on follow-up?" answers="" 
-        choice="Yes,No"/>
+        question="Is the patient on followup?" answer="" 
+        choices="Yes,No" />
   </Page>
 
+  <!-- Add to concepts database -->
   <Page>
       <ShowIf>
-          <Criteria type="EQUALS" id="onFollwUp" value="Yes"/>
+          <Criteria type="EQUALS" id="onFollowUp" value="Yes"/>
       </ShowIf>
       <Element type="ENTRY" id="dianosisLocation"
           concept="DIAGNOSIS LOCATION"

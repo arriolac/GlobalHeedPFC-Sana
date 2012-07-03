@@ -253,7 +253,7 @@ public class Moca extends Activity implements View.OnClickListener {
         		}
         		// Attempt to validate the credentials changed in the settings.
         		if(mCredentialsTask != null 
-        			&& mCredentialsTask.getStatus() == Status.FINISHED)
+        			|| mCredentialsTask.getStatus() == Status.FINISHED)
         		{
         				mCredentialsTask = new CheckCredentialsTask();
         				mCredentialsTask.setValidationListener(

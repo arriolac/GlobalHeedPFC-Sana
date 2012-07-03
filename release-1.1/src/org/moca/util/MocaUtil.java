@@ -447,7 +447,7 @@ public class MocaUtil {
         
         // Updated 6/30/2012
         insertProcedure(ctx, R.raw.diabetes);
-        insertProcedure(ctx, R.raw.gastrointestinal);
+//        insertProcedure(ctx, R.raw.gastrointestinal);
         
     	//insertProcedure(ctx, R.raw.audio_upload_test);
     }
