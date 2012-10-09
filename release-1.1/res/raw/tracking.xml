@@ -1,0 +1,27 @@
+<Procedure="Tracking">
+    <!-- Added For Tracking -->
+    <Page>
+        <Element type="RADIO" id="trackingSeekingHealthcare"
+          concept="TRACKING SEEKING HEALTHCARE"
+          question="Would you have sought healthcare, if we had not offered mHealth care to you?"
+          answer="" 
+          choices="Yes,No" />
+    </Page>
+    <Page>
+        <ShowIf>
+            <Criteria type="EQUALS" id="trackingSeekingHealthcare" value="Yes" />
+        </ShowIf>
+        <Element type="SELECT" id="trackingLocationHealthcare"
+          concept="TRACKING LOCATION HEALTHCARE"
+          question="Where you have sought healthcare had our team not given you care?"
+          answer=""
+          choices="Government Clinic,Private Clinic,Government Hospital,Private Hospital" />
+    </Page>
+    <Page>
+        <Element type="SELECT" id="trackingTravelHealthcare"
+          concept="TRACKING TRAVEL HEALTHCARE"
+          question="How would you have traveled to receive the care?"
+          answer=""
+          choices="By Foot,Motorbike,Cab,Bus" />
+    </Page>
+</Procedure>
