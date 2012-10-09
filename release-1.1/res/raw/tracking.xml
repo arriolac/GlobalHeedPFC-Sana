@@ -1,4 +1,4 @@
-<Procedure="Tracking">
+<Procedure title="Tracking">
     <!-- Added For Tracking -->
     <Page>
         <Element type="RADIO" id="trackingSeekingHealthcare"
@@ -13,7 +13,7 @@
         </ShowIf>
         <Element type="SELECT" id="trackingLocationHealthcare"
           concept="TRACKING LOCATION HEALTHCARE"
-          question="Where you have sought healthcare had our team not given you care?"
+          question="Where would you have sought healthcare had our team not given you care?"
           answer=""
           choices="Government Clinic,Private Clinic,Government Hospital,Private Hospital" />
     </Page>

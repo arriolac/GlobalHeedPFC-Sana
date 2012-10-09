@@ -275,6 +275,21 @@ public class MocaUtil {
             	xmlFullProcedure = xmlHeader + xmlFindPatient
             						+ xmlRestOfProcedure;
             }
+            
+            // Insert "Tracking" procedure
+            InputStream rsTracking = ctx.getResources().openRawResource(R.raw.tracking);
+            byte[] dataTracking = new byte[rsTracking.available()];
+            rsTracking.read(dataTracking);
+            String originalXMLTracking = new String(dataTracking);
+            String trackingHeader = "<Procedure title=\"Tracking\">";
+            String procedureFooter = "</Procedure>";
+            String contentXMLTracking = originalXMLTracking.substring(
+                    trackingHeader.length()+1, 
+                    originalXMLTracking.length() - procedureFooter.length()-1);
+            //if (xmlFullProcedure.endsWith(procedureFooter)) {
+                String xmlHeader = xmlFullProcedure.substring(0, xmlFullProcedure.length()-procedureFooter.length()-2);
+                xmlFullProcedure = xmlHeader + contentXMLTracking + procedureFooter;
+            //}
                         
             Procedure p = Procedure.fromXMLString(xmlFullProcedure);
             title = p.getTitle();
@@ -353,7 +368,7 @@ public class MocaUtil {
             	xmlFullProcedure = xmlHeader + xmlFindPatient 
             						+ xmlRestOfProcedure;
             }
-                        
+                
             Procedure p = Procedure.fromXMLString(xmlFullProcedure);
             title = p.getTitle();
             author = p.getAuthor();
@@ -429,8 +444,8 @@ public class MocaUtil {
     	insertProcedure(ctx, R.raw.tbpatient);
     	insertProcedure(ctx, R.raw.cvd_protocol);
     	insertProcedure(ctx, R.raw.oral_cancer);
-    	*/
     	insertProcedure(ctx, R.raw.api_test);
+    	*/
 
         insertProcedure(ctx, R.raw.burns);
         insertProcedure(ctx, R.raw.diarrhea);
